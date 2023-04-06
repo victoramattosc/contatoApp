@@ -16,5 +16,27 @@ export class CttMariPage implements OnInit {
 
   ngOnInit() {
   }
+  public actionSheetButtons = [
+    {
+      text: 'Delete',
+      role: 'destructive',
+      data: {
+        action: 'delete'
+      }
+    },
+    {
+      text: 'Edit',
+      data: {
+        action: 'edit'
+      }
+    },
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      data: {
+        action: 'cancel'
+      }
+    }
+  ];
 
 }

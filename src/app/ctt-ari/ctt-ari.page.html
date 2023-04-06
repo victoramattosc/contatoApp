@@ -4,9 +4,60 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>Ariane</ion-title>
+    <ion-buttons slot="end">
+      <ion-button shape="round" color="translucent">
+        <ion-icon
+          size="small"
+          slot="icon-only"
+          name="star-outline"
+          color="primary"
+        ></ion-icon>
+      </ion-button>
+      <ion-button shape="round" color="translucent">
+        <ion-icon
+          size="small"
+          slot="icon-only"
+          name="pencil-outline"
+          color="primary"
+        ></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+  <div class="ion-text-center">
+    <img
+      src="https://m.media-amazon.com/images/I/81hZXwAi55L.jpg"
+      alt=""
+    />
+  </div>
+  <ion-card-header>
+    <ion-card-title>Ari</ion-card-title>
+    <ion-card-subtitle>(14)99849321</ion-card-subtitle>
+  </ion-card-header>
+
+  <div class="function ion-text-center" >
+    <ion-icon name="call-outline" size="large">Ligar</ion-icon>
+    <ion-icon name="mail-outline" size="large">SMS</ion-icon>
+    <ion-icon name="videocam-outline" size="large">Vídeochamada</ion-icon>
+  </div>
+
+<ion-card>
+  <ion-item>
+    <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+    <ion-label>Ariane Rodokas Barbosa</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="at-outline" slot="start"></ion-icon>
+    <ion-label
+      ><a href="mailto:mariana.ferreira151@etec.sp.gov.br"
+        >ariane.rodokas@etec.sp.gov.br</a
+      ></ion-label
+    >
+  </ion-item>
+
+</ion-card>
 
 </ion-content>

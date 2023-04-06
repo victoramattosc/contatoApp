@@ -17,4 +17,7 @@ export class HomePage {
   mudarPag(route:string){
     this.route.navigate([route])
   }
+
 }
+
+

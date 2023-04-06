@@ -4,19 +4,44 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>Mari</ion-title>
+    <ion-buttons slot="end">
+      <ion-button shape="round" color="translucent">
+        <ion-icon
+          size="small"
+          slot="icon-only"
+          name="star-outline"
+          color="primary"
+        ></ion-icon>
+      </ion-button>
+      <ion-button id="open-action-sheet" shape="round" color="translucent">
+        <ion-icon
+          size="small"
+          slot="icon-only"
+          name="pencil-outline"
+          color="primary"
+        ></ion-icon>
+        <ion-action-sheet
+        trigger="open-action-sheet"
+        [buttons]="actionSheetButtons"
+></ion-action-sheet>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+<ion-button id="open-action-sheet">Open</ion-button>
 
 <ion-content [fullscreen]="true">
 
     <div class="ion-text-center">
       <img
-        src="https://i.pinimg.com/originals/ce/48/95/ce4895b50989ea961daf29aadd1f4800.jpg"
+        src="https://64.media.tumblr.com/ca9ad155add866935adca392ac99b337/ab7e1aea19a5e04e-c5/s540x810/8c35fd9ae76f681db30b252d9e27a693c846111a.jpg"
         alt=""
       />
     </div>
     <ion-card-header>
       <ion-card-title>Mari</ion-card-title>
+      <ion-card-subtitle>(14)9977801020</ion-card-subtitle>
     </ion-card-header>
 
     <div class="function ion-text-center" >
@@ -29,33 +54,13 @@
     <ion-item>
       <ion-icon name="person-circle-outline" slot="start"></ion-icon>
       <ion-label>Mariana Rove Ferreira</ion-label>
-      <ion-button shape="round" color="translucent">
-        <ion-icon
-          size="small"
-          slot="icon-only"
-          name="pencil-outline"
-          color="primary"
-        ></ion-icon>
-      </ion-button>
     </ion-item>
-    <ion-item
-      href="mailto:mariana.ferreira151@etec.sp.gov.br"
-      class="ion-activated"
-    >
+    <ion-item>
       <ion-icon name="at-outline" slot="start"></ion-icon>
       <ion-label
         ><a href="mailto:mariana.ferreira151@etec.sp.gov.br"
           >mariana.ferreira151@etec.sp.gov.br</a
-        ></ion-label
-      >
-      <ion-button shape="round" color="translucent">
-        <ion-icon
-          size="small"
-          slot="icon-only"
-          name="pencil-outline"
-          color="primary"
-        ></ion-icon>
-      </ion-button>
+        ></ion-label>
     </ion-item>
 
   </ion-card>
