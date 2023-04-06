@@ -1,12 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Contatos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-item class="novoctt">
+    <ion-icon name="person-add-outline" color="primary"></ion-icon>
+    Criar Novo Contato
+  </ion-item>
   <ion-item (click)="mudarPag('../ctt-ari')">
     <ion-thumbnail slot="start">
       <img src="https://m.media-amazon.com/images/I/81hZXwAi55L.jpg">
@@ -57,4 +61,10 @@
       </h1>
     </ion-label>
   </ion-item>
+
+  <ion-fab  slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button size="small">
+      <ion-icon name="apps-outline" size="small"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

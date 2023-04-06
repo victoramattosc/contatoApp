@@ -8,6 +8,7 @@
   transform: translateY(-50%);
 }
 
+
 #container strong {
   font-size: 20px;
   line-height: 26px;
@@ -37,4 +38,10 @@ ion-thumbnail {
 
 img{
   border-radius: 50%;
+}
+
+.novoctt{
+  color: #3880ff;
+  font-size: medium;
+  cursor: pointer;
 }
